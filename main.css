@@ -1,0 +1,66 @@
+
+body {
+  font-family: Roboto, sans-serif;
+  background: linear-gradient(to right, rgb(119, 165, 187), rgb(96, 57, 112));
+  width: 500px;
+height: 500px;
+}
+
+.container {
+  padding: 0 100px;
+  margin-left: 80px;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1.2em;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#4e1a70;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 6px solid #c03636;
+  width: 300px;
+}
+
+h1 {
+  font-size: 2em;
+  font-style: oblique;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+  color: rgb(0, 47, 255);
+  
+}
+
+h3 {
+  font-size: 1em;
+
+}
+
+  /* Свойства фотографии*/
+.photo {
+
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 6px solid #4d0d47;
+}
+
